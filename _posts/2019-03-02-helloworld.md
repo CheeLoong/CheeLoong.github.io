@@ -1,5 +1,6 @@
 ---
 title: "Hello World"
+permalink: /helloworld/
 data: 2019-03-02
 tags: [Hello World]
 excerpt: "First Post by Chee Loong"
