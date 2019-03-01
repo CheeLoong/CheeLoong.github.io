@@ -4,7 +4,7 @@ permalink: /machine-learning/
 title: "Machine Learning Posts by Tags"
 author_profile: true
 header:
-  image: "/assets/images/robot.jpeg"
+  image: "/assets/images/bigdata.jpg"
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
