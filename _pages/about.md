@@ -1,8 +1,6 @@
 ---
 title: "About"
 permalink: /about/
-header:
-  image: "/assets/images/about-me.jpg"
 ---
 
 I am an associate data scientist who excels at machine learning, exploratory data analysis, data cleaning,
