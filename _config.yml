@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chee Loong Lian"
+title                    : "Chee Loong's Blog"
 title_separator          : "-"
 name                     : "Chee Loong Lian"
 description              : "Data Science Portfolio."
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chee Loong Lian"
+  name             : "Chee Loong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
-  location         : "Kuala Lumpur"
+  bio              : "In a world full of Kardashians, be a Musk."
+  location         : "Kuala Lumpur, Malaysia"
   email            :
   links:
     - label: "Email"
@@ -293,11 +293,3 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _pages
-  - scope:
-    path: ""
-    type: pages
-    values:
-      layout: single
-      author_profile: true
-      
