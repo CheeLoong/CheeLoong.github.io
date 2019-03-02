@@ -1,11 +1,9 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  - title: "Machine Learning"
-    url: /machine-learning/
   - title: "Blog"
     url: /blog/
+  - title: "About"
+    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
