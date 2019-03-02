@@ -1,9 +1,9 @@
 ---
 title: "Hello World"
 date: 2019-03-02
-permalink: /posts/2019/03/helloworld/
+permalink: /helloworld/
 tags: [Hello World]
-excerpt: "2019-03-02: Superhero landing on GitHub.io"
+excerpt: "Superhero landing on GitHub.io"
 mathjax: "true"
 ---
 
