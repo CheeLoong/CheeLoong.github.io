@@ -4,8 +4,8 @@ main:
     url: /about/
   - title: "Machine Learning"
     url: /machine-learning/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Blog"
+    url: /blog/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
