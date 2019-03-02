@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 permalink: /helloworld/
-data: 2019-03-02
+date: 2019-03-02
 tags: [Hello World]
 excerpt: "2019-03-02: Superhero landing on GitHub.io"
 mathjax: "true"
