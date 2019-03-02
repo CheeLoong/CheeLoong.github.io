@@ -41,7 +41,7 @@
     {% elsif post.collection == 'publications' %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.date %}
-     <p class="page__date"><!--<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> --> <i><time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></i></p>
+     <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}<i><time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></i></p>
     {% endif %}
 
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
