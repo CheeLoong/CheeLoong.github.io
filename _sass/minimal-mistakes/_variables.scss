@@ -135,16 +135,16 @@ $base0f: #ff5370 !default;
 $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
-$large: 925px !default;
-$x-large: 1800px !default;
+$large: 1024px !default;
+$x-large: 1280px !default;
 
 /*
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 0px !default;
-$right-sidebar-width: 0px !default;
-$right-sidebar-width-wide: 0px !default;
+$right-sidebar-width-narrow: 200px !default;
+$right-sidebar-width: 300px !default;
+$right-sidebar-width-wide: 400px !default;
 
 /*
    Other
@@ -154,7 +154,7 @@ $border-radius: 4px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
-$navicon-width: 28px !default;
-$navicon-height: 4px !default;
+$navicon-width: 1.5rem !default;
+$navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
