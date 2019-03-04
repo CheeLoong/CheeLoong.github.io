@@ -1,13 +1,11 @@
 ---
-title: "Hello World"
+title: "Superhero landing on Github.io"
 date: 2019-03-02
 permalink: /helloworld/
 tags: [Hello World]
 excerpt: "Superhero landing on GitHub.io"
 mathjax: "true"
 ---
-
-## 2019-03-02: Superhero landing on GitHub.io
 
 After months of doing data science projects on my local workspace, I've finally created a blog to dedicate my lifelong learning as an associate data scientist (maybe some personal stories too)
 
