@@ -1,5 +1,5 @@
 ---
-title: "Semantic Segmentation of Cambridge-driving Labeled Video"
+title: "Semantic Segmentation on Cambridge-driving Labeled Video"
 date: 2019-03-20
 permalink: /camvid-tiramisu/
 tags: [fastai, deep learning, cnn, u-net, camvid-tiramisu, semantic segmentation]
@@ -12,7 +12,7 @@ mathjax: "true"
 ![https://towardsdatascience.com/detection-and-segmentation-through-convnets-47aa42de27ea](https://cdn-images-1.medium.com/max/1200/1*SNvD04dEFIDwNAqSXLQC_g.jpeg)
 
 
-Note that we will be doing semantic segmentation and that's different from object detection! Why aren't we doing object detection yet? Well cuz my brain isn't large enough yet.
+In this blogpost, we will be doing semantic segmentation and that's different from object detection! Why aren't we doing object detection yet? Well cuz my brain isn't large enough yet.
 
 **So what is semantic segmentation?**
 
