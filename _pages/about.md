@@ -1,12 +1,10 @@
 ---
-title: "About"
+title: "Who's Chee Loong?"
 permalink: /about/
 author_profile: true
 header:
 image: "/assets/images/lofi-banner.jpg"
 ---
-
-**Who's Chee Loong?**
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
@@ -24,6 +22,6 @@ You see, what I am looking for, is to be able to get my hands dirty, to transfor
 
 I think my biggest fear in life is dying without having done all the things that I wanted to do in life, I think it's very millenial of me to say this, but I want to have a positive impact on the world someday, and I believe the way to go is to do what you are passionate about, to never give up, and to never stop learning, and if you think about the vastness of the universe and how miniature our lives are in comparison to everything else, we really have a responsibility to live it so that it felt significant to us.
 
-<div class="tenor-gif-embed" data-postid="9758285" data-share-method="host" data-width="100%" data-aspect-ratio="1.3333333333333333"><a href="https://tenor.com/view/stephen-colbert-happy-cry-ugly-gif-9758285">Stephen Colbert Happy GIF</a> from <a href="https://tenor.com/search/stephencolbert-gifs">Stephencolbert GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<div class="tenor-gif-embed" data-postid="9758285" data-share-method="host" data-width="50%" data-aspect-ratio="1.3333333333333333"><a href="https://tenor.com/view/stephen-colbert-happy-cry-ugly-gif-9758285">Stephen Colbert Happy GIF</a> from <a href="https://tenor.com/search/stephencolbert-gifs">Stephencolbert GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-I know, I am awesome, so if you have any job opportunities in the analytics field, contact me! All information can be found under my profile picture. 
+I know, I am awesome, so if you have any job opportunities in the analytics field, contact me! All information can be found under my profile picture.
