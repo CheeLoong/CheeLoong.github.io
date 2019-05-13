@@ -1,5 +1,13 @@
+---
+title: "Data Cleaning & Feature Enginnering on Rossmann"
+date: 2019-05-13
+permalink: /rossmann-clean2/
+tags: [fastai, feature engineering, data cleaning, rossmann, kaggle]
+excerpt: "Preparing the dataset before we build neural net on Rossmann"
+mathjax: "true"
+---
 
-In this blogpost, we will be using [Rossmann dataset](https://www.kaggle.com/c/rossmann-store-sales/data) which was featured on Kaggle 3 years ago. 
+In this blogpost, we will be using [Rossmann dataset](https://www.kaggle.com/c/rossmann-store-sales/data) which was featured on Kaggle 3 years ago.
 
 It has historical sales data for 1,115 Rossmann stores. The task is to forecast the "Sales" column for the test set, but before we go about to do that (which will be in the next blogpost), we will explore feature engineering and data cleaning part of the dataset.
 
@@ -50,7 +58,7 @@ from fastai.basics import *
 
 ## Getting the Data
 
-First of all, let's try to get the data, note that In addition to the provided data, we will be using external datasets put together by participants in the Kaggle competition. We can download all of them [here](http://files.fast.ai/part2/lesson14/rossmann.tgz). 
+First of all, let's try to get the data, note that In addition to the provided data, we will be using external datasets put together by participants in the Kaggle competition. We can download all of them [here](http://files.fast.ai/part2/lesson14/rossmann.tgz).
 
 After we got the the `.tgz` file, we can untar them and upload to which `PATH` is pointing below.
 
@@ -193,7 +201,7 @@ train.head(5)
 
 
 1. Store - a unique Id for each store
-2. DayOfWeek - literally day in a week, monday = 1, tuesday = 2,  etc. 
+2. DayOfWeek - literally day in a week, monday = 1, tuesday = 2,  etc.
 3. Sales - the turnover for any given day (this is what you are predicting)
 4. Customers - the number of customers on a given day
 5. Open - an indicator for whether the store was open: 0 = closed, 1 = open
@@ -201,9 +209,9 @@ train.head(5)
 7. StateHoliday - indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None
 8. SchoolHoliday - indicates if the (Store, Date) was affected by the closure of public schools
 
-Ok let's randomly pick one of the row, 2nd index item, we are looking at store 3, it's on 2015 July 31st, there were 821 customers on that day, and the store has made 8314 Euros, I am guessing euros since its a germany drug store, store was opened even though there was a school holiday, there was also a promo on that day. 
+Ok let's randomly pick one of the row, 2nd index item, we are looking at store 3, it's on 2015 July 31st, there were 821 customers on that day, and the store has made 8314 Euros, I am guessing euros since its a germany drug store, store was opened even though there was a school holiday, there was also a promo on that day.
 
-What else do we want to know? Maybe we want to know how big is our train set and also the time period for these sales. 
+What else do we want to know? Maybe we want to know how big is our train set and also the time period for these sales.
 
 
 ```python
@@ -322,7 +330,7 @@ store.head(3)
 7. Promo2Since[Year/Week] - describes the year and calendar week when the store started participating in Promo2
 8. PromoInterval - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
 
-Apparently `Store` table gives us information about the store, competition, and promo. 
+Apparently `Store` table gives us information about the store, competition, and promo.
 
 
 ```python
@@ -336,7 +344,7 @@ store.shape
 
 
 
-There are 1,115 Rossmann store, so there's 1,115 rows of store information for each store. 
+There are 1,115 Rossmann store, so there's 1,115 rows of store information for each store.
 
 
 ```python
@@ -414,7 +422,7 @@ test.head(3)
 
 
 
-All the columns in the `test` set have been discussed except `Id`, Id column represents a (Store, Date) duple within the test set. As expected, there's no `Sales` or `Customer` column, because these are the variables we would want to predict. 
+All the columns in the `test` set have been discussed except `Id`, Id column represents a (Store, Date) duple within the test set. As expected, there's no `Sales` or `Customer` column, because these are the variables we would want to predict.
 
 ### External Dataset
 
@@ -486,7 +494,7 @@ store_states.shape
 
 
 
-As discussed, there were 1,115 stores, so there were 1,115 rows. 
+As discussed, there were 1,115 stores, so there were 1,115 rows.
 
 
 ```python
@@ -612,7 +620,7 @@ googletrend.head(3)
 
 
 
-Not entirely sure how to make use of this table yet, but it seems to be giving information about some sort of Google trend, will talk about the naming convention of the `file` column later. 
+Not entirely sure how to make use of this table yet, but it seems to be giving information about some sort of Google trend, will talk about the naming convention of the `file` column later.
 
 
 
@@ -759,7 +767,7 @@ weather['file'].nunique()
 
 
 
-`weather` table gives us information about the daily weather information of each state, not going to pretend I am a weather expert and knows what each of these column means. 
+`weather` table gives us information about the daily weather information of each state, not going to pretend I am a weather expert and knows what each of these column means.
 
 Alright, now that we have quickly glanced through the tables, let's prepare the data!
 
@@ -853,7 +861,7 @@ train.head(3)
 
 
 
-In the original dataset, `StateHoliday` was using various integers to represent different kind of State Holiday, but we are only interested in whether there was a holiday or not, so we turn it into booleans. 
+In the original dataset, `StateHoliday` was using various integers to represent different kind of State Holiday, but we are only interested in whether there was a holiday or not, so we turn it into booleans.
 
 ### Joins
 
@@ -861,13 +869,13 @@ In the original dataset, `StateHoliday` was using various integers to represent 
 
 Pandas does joins using the `merge` method. The `suffixes` argument describes the naming convention for duplicate fields. We've elected to leave the duplicate field names on the left untouched, and append a "\_y" to those on the right.
 
-It's helpful to define `join_df` although we can straightaway use `pd.merge` because we are always going to use left join, and we want to avoid typing the same suffix everything we do join. 
+It's helpful to define `join_df` although we can straightaway use `pd.merge` because we are always going to use left join, and we want to avoid typing the same suffix everything we do join.
 
 
 ```python
 def join_df(left, right, left_on, right_on=None, suffix='_y'):
     if right_on is None: right_on = left_on
-    return left.merge(right, how='left', left_on=left_on, right_on=right_on, 
+    return left.merge(right, how='left', left_on=left_on, right_on=right_on,
                       suffixes=("", suffix))
 ```
 
@@ -1009,7 +1017,7 @@ weather.head(3)
 
 
 
-For the `googletrend` table, we would like to split out the `week` which is a date interval into a date object so that we can join it with other tables. Inside a series object we can access its `.str` attribute that gives access to all the string processing functions. 
+For the `googletrend` table, we would like to split out the `week` which is a date interval into a date object so that we can join it with other tables. Inside a series object we can access its `.str` attribute that gives access to all the string processing functions.
 
 we can add new columns to a dataframe by simply defining it. We'll do this for googletrends by extracting dates and state names from the given data and adding those columns.
 
@@ -1076,7 +1084,7 @@ set(state_names.State)
 
 
 
-It seems like the `googletrend` table does not have the `googletrend` for all the states, and it also has `None` which we can assume to be missing data. 
+It seems like the `googletrend` table does not have the `googletrend` for all the states, and it also has `None` which we can assume to be missing data.
 
 For consistency purpose, we're also going to replace all instances of state name 'NI' to match the usage in the rest of the data: 'HB,NI'. This is a good opportunity to highlight pandas indexing. We can use `.loc[rows, cols]` to select a list of rows and a list of columns from the dataframe. In this case, we're selecting rows w/ statename 'NI' by using a boolean list `googletrend.State=='NI'` and selecting "State".
 
@@ -1282,7 +1290,7 @@ googletrend.head(2)
 
 
 
-Previously, we only have the first 5 columns, but after we used `add_datapart` we now have many more columns on the different granularity of date time object. 
+Previously, we only have the first 5 columns, but after we used `add_datapart` we now have many more columns on the different granularity of date time object.
 
 **How is this useful?**
 
@@ -1321,7 +1329,7 @@ The Google trends data has a special category for the whole of the Germany - we'
 trend_de = googletrend[googletrend.file == 'Rossmann_DE']
 ```
 
-So now, we have the `googletrend` by state, and also for the whole of the Germany. 
+So now, we have the `googletrend` by state, and also for the whole of the Germany.
 
 Now we can outer join all of our data into a single dataframe. Recall that in outer joins everytime a value in the joining field on the left table does not have a corresponding value on the right table, the corresponding row in the new table has Null values for all right table fields. One way to check that all records are consistent and complete is to check for Null values post-join, as we do here.
 
@@ -1538,9 +1546,9 @@ store.head(2)
 
 
 
-We have left joined `store` and `store_states` as `store`, there is also no null values in the `State` column. 
+We have left joined `store` and `store_states` as `store`, there is also no null values in the `State` column.
 
-Next, we want to join our `train` table with our new `store` table, so that all information is in the same table, and we would like to do the same thing with the `test` set too. 
+Next, we want to join our `train` table with our new `store` table, so that all information is in the same table, and we would like to do the same thing with the `test` set too.
 
 
 ```python
@@ -2347,7 +2355,7 @@ Next we'll extract features "CompetitionOpenSince" and "CompetitionDaysOpen". No
 
 ```python
 for df in (joined,joined_test):
-    df["CompetitionOpenSince"] = pd.to_datetime(dict(year=df.CompetitionOpenSinceYear, 
+    df["CompetitionOpenSince"] = pd.to_datetime(dict(year=df.CompetitionOpenSinceYear,
                                                      month=df.CompetitionOpenSinceMonth, day=15))
     df["CompetitionDaysOpen"] = df.Date.subtract(df.CompetitionOpenSince).dt.days
 ```
@@ -2361,7 +2369,7 @@ for df in (joined,joined_test):
     df.loc[df.CompetitionOpenSinceYear<1990, "CompetitionDaysOpen"] = 0
 ```
 
-We add "CompetitionMonthsOpen" field, limiting the maximum to 2 years to limit number of unique categories. The reason for that is because this will be one of the categorical input variables in our neural net, and we do not want to put more categories than we should, so thats why we truncated it to limit it up to 2 years max. 
+We add "CompetitionMonthsOpen" field, limiting the maximum to 2 years to limit number of unique categories. The reason for that is because this will be one of the categorical input variables in our neural net, and we do not want to put more categories than we should, so thats why we truncated it to limit it up to 2 years max.
 
 
 ```python
@@ -2378,7 +2386,7 @@ joined.CompetitionMonthsOpen.unique()
 
 
 
-We certainly can treat it as a continuous input variable, but we want to explicitly tell our neural net that a competition that is opened for 1 month and competition that is opened for 12 months are more different than it should be. Otherwise, it'd be hard for the neural net to find a functional form that capture the big difference between the competition of 1 month vs competition of 12 months. 
+We certainly can treat it as a continuous input variable, but we want to explicitly tell our neural net that a competition that is opened for 1 month and competition that is opened for 12 months are more different than it should be. Otherwise, it'd be hard for the neural net to find a functional form that capture the big difference between the competition of 1 month vs competition of 12 months.
 
 Same process for Promo dates. You may need to install the `isoweek` package first.
 
@@ -2389,13 +2397,13 @@ Same process for Promo dates. You may need to install the `isoweek` package firs
 from isoweek import Week
 ```
 
-With `Promo2SinceYear` and `Promo2SinceWeek`, we know which year and week, but in order to convert the date to a time stamp, we need `year, month, and day`, so we will use `Week` to help us obtain the data we need to convert. 
+With `Promo2SinceYear` and `Promo2SinceWeek`, we know which year and week, but in order to convert the date to a time stamp, we need `year, month, and day`, so we will use `Week` to help us obtain the data we need to convert.
 
 **Note: we are using `df.apply` which runs piece of python code over every row and its very slow, why do we still use it?**
 
-In practice, whenever we try to apply a function to every row of something, or every element of a tensor, if there isn't a vectorized version function, we will have to call something like `df.apply` and pass in a lambda function like below. 
+In practice, whenever we try to apply a function to every row of something, or every element of a tensor, if there isn't a vectorized version function, we will have to call something like `df.apply` and pass in a lambda function like below.
 
-In this case, we can't find a vectorized version function from pandas or numpy to convert Promo2SinceYear and Promo2SinceWeek into a date, so that's why we use the lambda approach. 
+In this case, we can't find a vectorized version function from pandas or numpy to convert Promo2SinceYear and Promo2SinceWeek into a date, so that's why we use the lambda approach.
 
 
 ```python
@@ -2420,9 +2428,9 @@ If we are bad at programming and we need constant reminder on what `lambda` does
 
 Here's what the code above does:
 `Week` basically takes in `Year`, `Weeks`, this tells which year we are looking at, and how many weeks we are into the year.
-`.monday()` By adding this to `Week`, we are saying that we want to take every Monday, of given year, and the given weeks in the year. 
+`.monday()` By adding this to `Week`, we are saying that we want to take every Monday, of given year, and the given weeks in the year.
 
-So for example: 
+So for example:
 
 
 ```python
@@ -2530,8 +2538,8 @@ joined.columns
 
 ```python
 for df in (joined,joined_test):
-    df.loc[df.Promo2Days<0, "Promo2Days"] = 0 # this should strictly be positive because you cant run a future promo 
-    df.loc[df.Promo2SinceYear<1990, "Promo2Days"] = 0 # these are the missing values, we will just put them all to 0 
+    df.loc[df.Promo2Days<0, "Promo2Days"] = 0 # this should strictly be positive because you cant run a future promo
+    df.loc[df.Promo2SinceYear<1990, "Promo2Days"] = 0 # these are the missing values, we will just put them all to 0
     df["Promo2Weeks"] = df["Promo2Days"]//7 # new engineered feature, weeks since promo2
     df.loc[df.Promo2Weeks<0, "Promo2Weeks"] = 0  # stricly positive value
     df.loc[df.Promo2Weeks>25, "Promo2Weeks"] = 25 # truncate at 25 weeks, why? same reason as 'CompetitionMonthsOpen' previously
@@ -2551,16 +2559,16 @@ If you are using Google Colab as your server and using the same setup as I did a
 
 ## Durations
 
-Time series usually have events, and when a certain event happens, something interesting will happen before and after the event, think of grocery sales, if there's a holiday coming up, the grocery sales will most likely go up before the holiday (consumer buying supplies for holiday), and after the holiday (stock up groceries), and grocery sales most likely go down during the holiday. 
+Time series usually have events, and when a certain event happens, something interesting will happen before and after the event, think of grocery sales, if there's a holiday coming up, the grocery sales will most likely go up before the holiday (consumer buying supplies for holiday), and after the holiday (stock up groceries), and grocery sales most likely go down during the holiday.
 
 Although it is not compulsory to do this sort of feature engineering when using neural net, is is often helpful to do so especially when we have limited data, or limited computation power. (*think of it as pointing the right direction to the neural net*)
 
-Therefore when we have events associated with a time series data, it's often a good idea to create two new columns for each event: 
+Therefore when we have events associated with a time series data, it's often a good idea to create two new columns for each event:
 1. How long is it going to be until the next event happens (*e.g. How long till the next state holiday*)
 2. How long has it been since the last event happened (*e.g. How long has it been since the last state holiday*)
 
 
-### `get_elapsed` 
+### `get_elapsed`
 
 Essentially, when working with time series data to extract data that explains relationships across rows as opposed to columns, e.g.:
 * Running averages
@@ -2577,16 +2585,16 @@ Upon initialization, this will result in datetime na's until the field is encoun
 ```python
 # initialize empty list to store results
 def get_elapsed(fld, pre):
-    day1 = np.timedelta64(1, 'D') 
-    last_date = np.datetime64() 
-    last_store = 0 
-    res = [] 
+    day1 = np.timedelta64(1, 'D')
+    last_date = np.datetime64()
+    last_store = 0
+    res = []
     for s,v,d in zip(df.Store.values,df[fld].values, df.Date.values):
         if s != last_store:
           last_date = np.datetime64()
           last_store = s  
-        if v: 
-          last_date = d 
+        if v:
+          last_date = d
         res.append(((d-last_date).astype('timedelta64[D]') / day1))  
     df[pre+fld] = res
 ```
@@ -2597,14 +2605,14 @@ Let's break this down line by line because we are *bad at programming and we LOV
 ```
 day1 = np.timedelta64(1, 'D')
 ```
-This initializes a time delta of 1 day (think of it as 1 day time difference), why do we create this? Because we want make our result `res` to be without any unit measurement. 
+This initializes a time delta of 1 day (think of it as 1 day time difference), why do we create this? Because we want make our result `res` to be without any unit measurement.
 
 
 
 ```
 last_date = np.datetime64()
 ```
-This initializes a Not a Time (NaT) value, which is equivalent of nan for timestamp values, we use it to reset `last_date` whenever we are iterating through a new store. 
+This initializes a Not a Time (NaT) value, which is equivalent of nan for timestamp values, we use it to reset `last_date` whenever we are iterating through a new store.
 
 ```
 last_store = 0
@@ -2616,17 +2624,17 @@ We initialize this so that our first store (s = 1) will get `s != last_store` to
 for s,v,d in zip(df.Store.values, df[fld].values, df.Date.values)
 ```
 
-**`s`** is the store id, there should be a total of 1115 stores, so `s` takes on 1 to 1115. 
+**`s`** is the store id, there should be a total of 1115 stores, so `s` takes on 1 to 1115.
 
-**`v`** is stands for whatever your `fld` is, for example if your field is SchoolHoliday `fld = 'SchoolHoliday'`, `v` can be `1` meaning there was a school holiday or `0` whcih means no school holiday. 
+**`v`** is stands for whatever your `fld` is, for example if your field is SchoolHoliday `fld = 'SchoolHoliday'`, `v` can be `1` meaning there was a school holiday or `0` whcih means no school holiday.
 
-**`d`** is the date for the particular row information 
+**`d`** is the date for the particular row information
 
 *Note: s,v,d are arbitrary naming to get pieces of np arrays from zip, its fine to use other naming*
 
-**What is `zip`?** 
+**What is `zip`?**
 
-It's used to passed on iterables that we want to iterate through, in this case we want to iterate through the numpy arrays of each column in the dataframe. 
+It's used to passed on iterables that we want to iterate through, in this case we want to iterate through the numpy arrays of each column in the dataframe.
 
 
 **Why use `.values`?**
@@ -2644,18 +2652,18 @@ Whenever we have a new store, we reset `last_date` and update `last_store` to be
 
 
 ```
-if v: 
+if v:
     last_date = d
 ```
-Whenever (fld e.g. SchoolHoliday) is 1, we update `last_date` to be the date of that iteration 
+Whenever (fld e.g. SchoolHoliday) is 1, we update `last_date` to be the date of that iteration
 
 ```
 res.append(((d-last_date).astype('timedelta64[D]') / day1))
 ```
 
-If there's a holiday (`v == 1`) `last_date` will be updated and therefore we will always get `0.0`. 
+If there's a holiday (`v == 1`) `last_date` will be updated and therefore we will always get `0.0`.
 
-But if there isn't a holiday (`v == 0`) `last_date` will not be updated, and so `d - last_date` will give us the time difference between the iteration without holiday and the last time there was a holiday. 
+But if there isn't a holiday (`v == 0`) `last_date` will not be updated, and so `d - last_date` will give us the time difference between the iteration without holiday and the last time there was a holiday.
 
 
 Now that we are smart and know what `get_elapsed` does, we'll be applying this to a subset of columns:
@@ -3177,7 +3185,7 @@ for o in ['Before', 'After']:
 
 ### Windows / Rolling
 
-Next we'll demonstrate window functions in pandas to calculate rolling quantities, where you apply some functions to some window interval of each datapoint. 
+Next we'll demonstrate window functions in pandas to calculate rolling quantities, where you apply some functions to some window interval of each datapoint.
 
 Here we're sorting by date (`sort_index()`) and counting the number of events of interest (`sum()`) defined in `columns` in the following week (`rolling()`), grouped by Store (`groupby()`). We do the same in the opposite direction.
 
@@ -3195,7 +3203,7 @@ columns
 
 
 ```python
-# Use this output with `bwd` dataframe and `fwd` dataframe to understand .rolling() 
+# Use this output with `bwd` dataframe and `fwd` dataframe to understand .rolling()
 df[['Store']+columns][df['Store'] == 1].sort_index().head(20)
 ```
 
@@ -3382,7 +3390,7 @@ df[['Store']+columns][df['Store'] == 1].sort_index().head(20)
 
 
 ```python
-# bwd for backward rolling :) 
+# bwd for backward rolling :)
 bwd = df[['Store']+columns].sort_index().groupby("Store").rolling(7, min_periods=1).sum()
 bwd.head(15)
 ```
@@ -3538,9 +3546,9 @@ bwd.head(15)
 
 `.rolling(7, min_periods = 1)` means taking 7 days window and doing the aggregrate function that we specified (in this case `.sum()`), the `min_periods` basically applies to the edge of the data, which is the minimum acceptable window towards the end of the data for aggregrate function to apply.
 
-For example: 
+For example:
 
-If we look at *store 1*, on `2013-01-12`, the 7 days windows are `2013-01-06` until `2013-01-12`, In the 7 days windows, 5 days had `promo`, and that is why in the rolling output, `Promo` column on `2013-01-12` has a value of 5. 
+If we look at *store 1*, on `2013-01-12`, the 7 days windows are `2013-01-06` until `2013-01-12`, In the 7 days windows, 5 days had `promo`, and that is why in the rolling output, `Promo` column on `2013-01-12` has a value of 5.
 
 ----
 So that was 7 days windows towards the past, what about 7 days windows towards the future?
@@ -3554,7 +3562,7 @@ If we look at *store 1*, on `2013-01-12`, the 7 days windows into the future are
 
 
 ```python
-# fwd for forward rolling :) 
+# fwd for forward rolling :)
 fwd = df[['Store']+columns].sort_index(ascending=False).groupby("Store").rolling(7, min_periods=1).sum()
 fwd.tail(20)
 ```
@@ -3745,7 +3753,7 @@ fwd.tail(20)
 
 Next we want to drop the Store indices grouped together in the window function, because we are not interested in rolling function on the store id.
 
-Often in pandas, there is an option to do this in place. This is time and memory efficient when working with large datasets. We will also reset to our default index. 
+Often in pandas, there is an option to do this in place. This is time and memory efficient when working with large datasets. We will also reset to our default index.
 
 
 ```python
@@ -4046,7 +4054,7 @@ It's usually a good idea to back up large tables of extracted / wrangled feature
 
 
 ```python
-# after running this code, a pickle file should appear in `PATH`, download it if u wanna backup 
+# after running this code, a pickle file should appear in `PATH`, download it if u wanna backup
 df.to_pickle(PATH/'df')
 ```
 
@@ -5643,6 +5651,6 @@ joined.to_pickle(PATH/'train_clean')
 joined_test.to_pickle(PATH/'test_clean')
 ```
 
-Remember to download the pickle files from `PATH`! 
+Remember to download the pickle files from `PATH`!
 
-That is all for this blogpost, in the next one we will be using the cleansed train and test set to build a neural net, thank you for reading the blogpost, and credit goes to [fast.ai](https://www.fast.ai/) for the materials. 
+That is all for this blogpost, in the next one we will be using the cleansed train and test set to build a neural net, thank you for reading the blogpost, and credit goes to [fast.ai](https://www.fast.ai/) for the materials.
