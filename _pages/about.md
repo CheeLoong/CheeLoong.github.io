@@ -22,8 +22,6 @@ Okay I thought that was kinda cool, my bad.
 
 ***So why did you quit?***
 
-(*tl;dr: it was not the right long-term career path*)
-
 How can I begin to explain this without sounding like I am just a guy who is pushing responsibilities or giving excuses? To be honest, I can't, but I will try.
 
 Looking back, I would admit that it was impulsive of me to quit the job after a period of 3 months (despite getting top performance reviews & job offer), everyone told me not to, a batch mate (although we were from different department) of mine also told me that I was the hardest worker he has met in the company, I had great colleagues, great leader, a very probable 'bright' future, and all it takes is *patience*.
@@ -36,12 +34,12 @@ You see, I was stubborn, I was impatient, I want to do more, I feel that I am no
 
 <img src="https://www.fearlessmotivation.com/wp-content/uploads/2017/06/elon-quotes-fb.jpg" width="800">
 
-**Why can't you be a date consultant, and be data scientist after?**
+***Why can't you be a date consultant, and be data scientist after?***
 
 I definitely could, I could be a **data consultant** by day and a **data scientist in my room** by night, but I was overly committed to the company paying my coffee bill, I work extra hours to be better at what I do at work, it's just the way I am at work, I can't control that side of me.
 
-**So what were you doing when you were unemployed?**
+***So what were you doing when you were unemployed?***
 
 A lot of MOOCs, I learned a lot of outdated algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted, took a step back questioning my life, questioning decision, decided to be positive and move forward, got advices from different DS on Linkedin, watch a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings on blog as portfolio.
 
-If you like what you see, here's my digits! <span style="font-size:26px;">[(016) 217-9937](tel: 0162179937)</span>
+If you like what you see, here's my digits! <span style="font-size:26px;">[+6016-2179937](tel: +60162179937)</span>
