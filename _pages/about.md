@@ -8,19 +8,19 @@ image: "/assets/images/lofi-banner.jpg"
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
-Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Date Scientist Associate**, but really he worked as a **Data Consultant** in **Ernst & Young Services Sdn. Bhd.** for 3 months.
+Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Date Scientist Associate**, but really he worked as a **Data Consultant**.
 
-**I am glad you asked what does data consultant do!**
+***I am glad you asked what does data consultant do!***
 
 The less cool description is that there was a lot of meet ups with the key executives, a lot of Microsoft Powerpoint Presentation & Excel.
 
 The slightly cooler version was that he was responsible for identifying the key performance indicators for BI, help compile the data warehouse architecture for data migration purpose, co-write analytics proposal and come up with use-cases.
 
-**Seriously, you gotta speak about yourself in third person?**
+***Seriously, you gotta speak about yourself in third person?***
 
 Okay I thought that was kinda cool, my bad.
 
-**So why did you quit?**
+***So why did you quit?***
 
 (*tl;dr: it was not the right long-term career path*)
 
@@ -44,6 +44,4 @@ I definitely could, I could be a **data consultant** by day and a **data scienti
 
 A lot of MOOCs, I learned a lot of outdated algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted, took a step back questioning my life, questioning decision, decided to be positive and move forward, got advices from different DS on Linkedin, watch a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings on blog as portfolio.
 
-If you like what you see,
-
-![phone][1] &nbsp;<span style="font-size:26px;">[(016) 217-9937](tel: 0162179937)</span>
+If you like what you see, here's my digits! <span style="font-size:26px;">[(016) 217-9937](tel: 0162179937)</span>
