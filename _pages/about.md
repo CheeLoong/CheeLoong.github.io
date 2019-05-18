@@ -8,7 +8,7 @@ image: "/assets/images/lofi-banner.jpg"
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
-Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Date Scientist Associate**, but really he worked as a **Data Consultant**.
+Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really he worked as a **Data Consultant**.
 
 ***I am glad you asked what does data consultant do!***
 
@@ -34,7 +34,7 @@ You see, I was stubborn, I was impatient, I want to do more, I feel that I am no
 
 <img src="https://www.fearlessmotivation.com/wp-content/uploads/2017/06/elon-quotes-fb.jpg" width="800">
 
-***Why can't you be a date consultant, and be data scientist after?***
+***Why can't you be a data consultant, and be data scientist after?***
 
 I definitely could, I could be a **data consultant** by day and a **data scientist in my room** by night, but I was overly committed to the company paying my coffee bill, I work extra hours to be better at what I do at work, it's just the way I am at work, I can't control that side of me.
 
