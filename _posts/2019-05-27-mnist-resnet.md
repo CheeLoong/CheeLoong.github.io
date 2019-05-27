@@ -689,9 +689,7 @@ The 56-layer was expected to overfit and should zip down to low training error b
 
 **What actually happened?**
 
-Basically, as we have more layers of convolutions, ReLU, and BatchNorm, accuracy of the model would most probably improve, however, beyond a certain number of layers, the accuracy would start to diminish with increasing number of layers, this is due to what is known as **Vanishing Gradient**, I found a youtube video explaining such concept clearly:
-
-[Vanishing & Exploding Gradient explained | A problem resulting from backpropagation](https://www.youtube.com/watch?v=qO_NLVjD6zE)
+Basically, as we have more layers of convolutions, ReLU, and BatchNorm, accuracy of the model would most probably improve, however, beyond a certain number of layers, the accuracy would start to diminish with increasing number of layers, this is due to what is known as **Vanishing Gradient**, I found a [youtube video](https://www.youtube.com/watch?v=qO_NLVjD6zE) explaining such concept clearly:
 
 That is the reason why the 56-layer was performing poorly than the 20-layer even in terms of training error.
 
