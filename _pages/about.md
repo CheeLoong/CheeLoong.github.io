@@ -36,18 +36,17 @@ Okay, so there were 2 reasonable considerations at that time, either I continue 
 
 I opted for the second option, the reason is simple, I do not have a technical background, and so it would be hard to get a technical job without having technical background, or technical working experience, rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to self-learn the technical aspect of data analytics, and consequently, leaving my full time job.  
 
-It is a path that sounded logical to me, probably not to everyone else, I did not really question the probability of me landing on a technical job when I hand in the resignation letter, all I was thinking is that, to me that was the right thing to do, and even if odds is not in my favour, it's important enough.
+It is a path that sounded logical to me, probably not to everyone else, I did not really question the probability of me landing on a technical job when I hand in the resignation letter, all I was thinking is that, to me that was the right thing to do, and even if odds were not in my favour, it's important enough.
 
 <img src="https://www.fearlessmotivation.com/wp-content/uploads/2017/06/elon-quotes-fb.jpg" width="800">
 
 
 ***So what were you doing when you were unemployed?***
 
-A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (shout out to traditional algorithm), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't feel upset getting rejected all the time, I think it is normal that companies want to invest in assets and not liabilities, and I felt like I was a liability more than an asset, so it isn't personal.
+A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (I guess traditional algorithm isn't good enough), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't feel upset getting rejected, but rather I wanted to know how can I be better, so I got some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
 
-The question isn't what should I do now because I can't get a job as DS, but rather, how can I transform myself in a way that top companies might acknowledge my skills and efforts? So I got some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
+Fingers crossed that 2019 will be a prosperous year!
 
-Fingers crossed that my luck would come soon!
+If you are a hirer/recruiter for a Data Scientist position, and you see what you like, call me maybe?
 
-If you are a hirer/recruiter for a Data Scientist position, and you see what you like, call this number!
- <span style="font-size:24px;">[Mobile: +6016-2179937](tel: +60162179937)</span>
+<span style="font-size:24px;">[Mobile: +6016-2179937](tel: +60162179937)</span>
