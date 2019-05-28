@@ -115,6 +115,9 @@ author:
     - label: "cheeloonglian@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:cheeloonglian@gmail.com
+    - label: "link"
+      icon: "fas fa-fw fa-link"
+      # url: "https://mywebsite.com/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
        url: "https://www.linkedin.com/in/chee-loong-l-40b341145/"
