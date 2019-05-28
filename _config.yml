@@ -117,10 +117,7 @@ author:
       url: mailto:cheeloonglian@gmail.com
     - label: "link"
       icon: "fas fa-fw fa-link"
-      # url: "https://mywebsite.com/"
-    - label: "link"
-      icon: "fab fa-fw fa-linkedin"
-       url: "https://www.linkedin.com/in/chee-loong-l-40b341145/"
+      url: "https://www.linkedin.com/in/chee-loong-l-40b341145/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
