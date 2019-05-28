@@ -20,26 +20,34 @@ The slightly cooler version was that he was responsible for identifying the key 
 
 Okay I thought that was kinda cool, my bad.
 
-***So why did you quit?***
+***So why did you quit? (Assuming you aren't a disloyal employee)***
 
 How can I begin to explain this without sounding like I am just a guy who is pushing responsibilities or giving excuses? To be honest, I can't, but I will try.
 
-Looking back, I would admit that it was impulsive of me to quit the job after a period of 3 months (despite getting top performance reviews & job offer), everyone told me not to, a batch mate (although we were from different department) of mine also told me that I was the hardest worker he has met in the company, I had great colleagues, great leader, a very probable 'bright' future, and all it takes is *patience*.
+Looking back, I would admit that it was impulsive of me to quit the job after a period of 3 months (despite getting top performance reviews & job offer), everyone told me not to, I pretty much got what everyone wanted from a job except that I didn't get the only thing that I cared about, which is to the exposure in the technical field of data analytics.
 
-But...
+The thing is I don't hate my job, I actually adore it, it's just that I love it less than the other job, and I sat down and thought about which to focus on, I work extra time as a **data consultant** using my personal time, because I was striving to be a better **data consultant**, but the same question kept popping in my head, is that truly what I want to do?
+
+Then I saw this..
 
 <img src="https://digitaladdictsblog.com/wp-content/uploads/2018/10/steve-jobs-quotes-2.jpg" width="800">
 
-You see, I was stubborn, I was impatient, I want to do more, I feel that I am not living up to my own potential, and it's driving me crazy that I can't do what I was set to do. As a result, I took a huge risk that could lead to long term unemployment & criticism from friends and families, why?
+Okay, so there were 2 reasonable considerations at that time, either I continue to work as a **data consultant** and wait for job opportunities to work as a **data scientist**, or leave without any job opportunities in hand.
+
+I opted for the second option, the reason is simple, I do not have a technical background, and so it would be hard to get a technical job without having technical background, or technical working experience, rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to self-learn the technical aspect of data analytics, and consequently, leaving my full time job.  
+
+It is a path that sounded logical to me, probably not to everyone else, I did not really question the probability of me landing on a technical job when I hand in the resignation letter, all I was thinking is that, to me that was the right thing to do, and even if odds is not in my favour, it's important enough.
 
 <img src="https://www.fearlessmotivation.com/wp-content/uploads/2017/06/elon-quotes-fb.jpg" width="800">
 
-***Why can't you be a data consultant, and be data scientist after?***
-
-I definitely could, I could be a **data consultant** by day and a **data scientist in my room** by night, but I was overly committed to the company paying my coffee bill, I work extra hours to be better at what I do at work, it's just the way I am at work, I can't control that side of me.
 
 ***So what were you doing when you were unemployed?***
 
-A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted, took a step back questioning my life, questioning decision, decided to be positive and move forward, got advices from different DS on Linkedin, watch a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
+A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (shout out to traditional algorithm), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't feel upset getting rejected all the time, I think it is normal that companies want to invest in assets and not liabilities, and I felt like I was a liability more than an asset, so it isn't personal.
 
-If you like what you see, here's my digits! <span style="font-size:26px;">[+6016-2179937](tel: +60162179937)</span>
+The question isn't what should I do now because I can't get a job as DS, but rather, how can I transform myself in a way that top companies might acknowledge my skills and efforts? So I got some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
+
+Fingers crossed that my luck would come soon!
+
+If you are a hirer/recruiter for a Data Scientist position, and you see what you like, call this number!
+ <span style="font-size:24px;">[Mobile: +6016-2179937](tel: +60162179937)</span>
