@@ -108,14 +108,14 @@ analytics:
 author:
   name             : "Chee Loong"
   avatar           : /assets/images/mypic.png
-  bio              : "former data consultant in Ernst & Young | undergrad in econometrics & finance | deep learning enthusiast | actively looking for a job."
+  bio              : "former data consultant in Ernst & Young | former digital analyst in Crave Asia | undergrad in econometrics & finance | deep learning enthusiast | DS job seeking "
   location         : "Kuala Lumpur, Malaysia"
   email            :
   links:
     - label: "cheeloonglian@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:cheeloonglian@gmail.com
-    - label: "link"
+    - label: "Linkedin"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/chee-loong-l-40b341145/"
     - label: "Twitter"
