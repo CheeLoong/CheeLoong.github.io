@@ -40,6 +40,6 @@ I definitely could, I could be a **data consultant** by day and a **data scienti
 
 ***So what were you doing when you were unemployed?***
 
-A lot of MOOCs, I learned a lot of outdated algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted, took a step back questioning my life, questioning decision, decided to be positive and move forward, got advices from different DS on Linkedin, watch a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings on blog as portfolio.
+A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted, took a step back questioning my life, questioning decision, decided to be positive and move forward, got advices from different DS on Linkedin, watch a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
 
 If you like what you see, here's my digits! <span style="font-size:26px;">[+6016-2179937](tel: +60162179937)</span>
