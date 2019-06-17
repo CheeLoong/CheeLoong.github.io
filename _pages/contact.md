@@ -9,7 +9,7 @@ Feel free to ask me out on a date / discuss career opporunities by sending an em
 
 I will get back to you as soon as possible! :)
 
-<form name="contact" method="POST" netlify>
+<form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
