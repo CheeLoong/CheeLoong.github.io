@@ -5,7 +5,7 @@ title: "Contact"
 author_profile: true
 ---
 
-Feel free to ask me out on a date / discuss career opporunities by sending an email to [cheeloonglian@gmail.com](mailto:cheeloonglian@gmail.com)
+Feel free to ask me out on a date / discuss career opportunities by sending an email to [cheeloonglian@gmail.com](mailto:cheeloonglian@gmail.com) either directly or using the contact form below. 
 
 I will get back to you as soon as possible! :)
 
