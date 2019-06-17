@@ -1,16 +1,16 @@
 ---
-title: "Who's Chee Loong?"
 permalink: /about/
 author_profile: true
 header:
-image: "/assets/images/lofi-banner.jpg"
 ---
+
+# Who's Chee Loong?
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
 Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really he worked as a **Data Consultant**.
 
-***I am glad you asked what does data consultant do!***
+***I am glad you asked what does a data consultant do!***
 
 The less cool description is that there was a lot of meet ups with the key executives, a lot of Microsoft Powerpoint Presentation & Excel.
 
@@ -47,6 +47,6 @@ A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I we
 
 Fingers crossed that 2019 will be a prosperous year!
 
-If you are a hirer/recruiter for a Data Scientist position, and you see what you like, call me maybe?
+If you are a hirer/recruiter for a Data Scientist position, please check out my CV page and call me maybe?
 
 <span style="font-size:24px;">[Mobile: +6016-2179937](tel: +60162179937)</span>
