@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+---
+---
+
+header {
+  background-image: <img src="{{ site.url }}{{ site.baseurl }}/assets/images/web-images/0717-NY.jpg" alt="">
+}
