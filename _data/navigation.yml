@@ -4,6 +4,8 @@ main:
     url: /year-archive/
   - title: "About"
     url: /about/
+  - title: "Contact"
+    url: /contact/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
