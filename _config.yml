@@ -21,6 +21,7 @@ title_separator          : "-"
 name                     : "Chee Loong Lian"
 description              : "Data Science Portfolio."
 url                      : "https://cheeloong.github.io"
+background-image         : <img src="{{ site.url }}{{ site.baseurl }}/assets/images/web-images/0717-NY.jpg" alt="">
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cheeloong/cheeloong.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
