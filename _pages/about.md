@@ -4,6 +4,10 @@ author_profile: true
 header:
 ---
 
+Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/170619.pdf). 
+
+Alright, let us proceed!
+
 # Who's Chee Loong?
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
@@ -46,7 +50,3 @@ It is a path that sounded logical to me, probably not to everyone else, I did no
 A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (I guess traditional algorithm isn't good enough), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't feel upset getting rejected, but rather I wanted to know how can I be better, so I got some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
 
 Fingers crossed that 2019 will be a prosperous year!
-
-If you are a hirer/recruiter for a Data Scientist position, please check out my CV page and call me maybe?
-
-<span style="font-size:24px;">[Mobile: +6016-2179937](tel: +60162179937)</span>
