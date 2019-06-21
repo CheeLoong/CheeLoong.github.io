@@ -4,11 +4,11 @@ author_profile: true
 header:
 ---
 
-Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/170619.pdf). 
+# Who's Chee Loong?
+
+Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/170619.pdf).
 
 Alright, let us proceed!
-
-# Who's Chee Loong?
 
 He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
@@ -36,9 +36,9 @@ Then I saw this..
 
 <img src="https://digitaladdictsblog.com/wp-content/uploads/2018/10/steve-jobs-quotes-2.jpg" width="800">
 
-Okay, so there were 2 reasonable considerations at that time, either I continue to work as a **data consultant** and wait for job opportunities to work as a **data scientist**, or leave without any job opportunities in hand.
+Okay, so there were 2 reasonable considerations at that time, either I continue to work as a **data consultant** and wait for potential job opportunities to work as a **data scientist**, or leave my current job without any job opportunities in hand, which also make my resume profile look really bad.
 
-I opted for the second option, the reason is simple, I do not have a technical background, and so it would be hard to get a technical job without having technical background, or technical working experience, rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to self-learn the technical aspect of data analytics, and consequently, leaving my full time job.  
+I opted for the second option, the reason is simple, I do not have a technical background, and so it would be hard to get a technical job without having technical background, or technical working experience, rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to create my own opportunities through sheer force of will and effort by self-learning the technical aspect of data analytics, and consequently, leaving my full time job.  
 
 It is a path that sounded logical to me, probably not to everyone else, I did not really question the probability of me landing on a technical job when I hand in the resignation letter, all I was thinking is that, to me that was the right thing to do, and even if odds were not in my favour, it's important enough.
 
@@ -47,6 +47,8 @@ It is a path that sounded logical to me, probably not to everyone else, I did no
 
 ***So what were you doing when you were unemployed?***
 
-A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (I guess traditional algorithm isn't good enough), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't feel upset getting rejected, but rather I wanted to know how can I be better, so I got some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, piecing up the advices from all sources, started deep learning, started blog, put learnings and my personal work on blog as portfolio.
+A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (I guess traditional algorithm isn't good enough), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't like to swim in the pool of self-pity for long, so I picked myself up and continue this journey, I received some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, I read on various forums on the subject, piecing up the advices from all sources, decided to start deep learning, decided to start a blog and put learnings and my personal work on my blog, it's probably the biggest reason why I could turn all the adversities into fuel that keeps me going.
 
-Fingers crossed that 2019 will be a prosperous year!
+***Final Thoughts?***
+
+Well, I just hope my time will come soon, the time when companies would appreciate my persona and skills, and offer me an actual DS job. Oh boy, you'd be suprised how much value I can bring to the company, but more importantly, so that my family and friends could stop worrying about my mental state, but seriously I don't know what they are worrying about, it's just a winning mentality. :)
