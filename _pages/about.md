@@ -1,28 +1,23 @@
 ---
+title: "Hello World, This is Chee Loong"
 permalink: /about/
 author_profile: true
 header:
 ---
 
-# Who's Chee Loong?
-
 Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/170619.pdf).
 
 Alright, let us proceed!
 
-He is a **Finance & Econometrics** graduate of **Monash University Clayton University**. He's also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
+I am a **Finance & Econometrics** graduate of **Monash University Clayton University**, also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
-Anyway, He worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, his main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, He was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really he worked as a **Data Consultant**.
+Anyway, I worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, my main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, I was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really I worked as a **Data Consultant**.
 
 ***I am glad you asked what does a data consultant do!***
 
 The less cool description is that there was a lot of meet ups with the key executives, a lot of Microsoft Powerpoint Presentation & Excel.
 
-The slightly cooler version was that he was responsible for identifying the key performance indicators for BI, help compile the data warehouse architecture for data migration purpose, co-write analytics proposal and come up with use-cases.
-
-***Seriously, you gotta speak about yourself in third person?***
-
-Okay I thought that was kinda cool, my bad.
+The slightly cooler version was that I was responsible for identifying the key performance indicators for BI, help compile the data warehouse architecture for data migration purpose, co-write analytics proposal and come up with use-cases.
 
 ***So why did you quit? (Assuming you aren't a disloyal employee)***
 
