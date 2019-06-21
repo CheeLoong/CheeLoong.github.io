@@ -1,5 +1,5 @@
 ---
-title: "Hello World, This is Chee Loong"
+title: "Hello World, This Is Chee Loong"
 permalink: /about/
 author_profile: true
 header:
@@ -11,7 +11,7 @@ Alright, let us proceed!
 
 I am a **Finance & Econometrics** graduate of **Monash University Clayton University**, also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
 
-Anyway, I worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, my main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, I was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really I worked as a **Data Consultant**.
+Anyway, I worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, my main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, I was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really I worked as a **Data Consultant** for 3 months.
 
 ***I am glad you asked what does a data consultant do!***
 
@@ -19,7 +19,7 @@ The less cool description is that there was a lot of meet ups with the key execu
 
 The slightly cooler version was that I was responsible for identifying the key performance indicators for BI, help compile the data warehouse architecture for data migration purpose, co-write analytics proposal and come up with use-cases.
 
-***So why did you quit? (Assuming you aren't a disloyal employee)***
+***So why did you quit after 3 months? (Assuming you were a loyal employee)***
 
 How can I begin to explain this without sounding like I am just a guy who is pushing responsibilities or giving excuses? To be honest, I can't, but I will try.
 
