@@ -1,5 +1,5 @@
 ---
-title: "Hello World, This Is Chee Loong"
+title: "Hello World, This is Chee Loong"
 permalink: /about/
 author_profile: true
 header:
