@@ -36,4 +36,4 @@ A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I we
 
 Software 2.0, what I learn, what I like to do, all falls under the umbrella of Software 2.0, and if your companies are looking at the long term, you would be thinking about Software 2.0, and you need to hire people to make that happen, and guess what, I am that guy!  
 
-<iframe src="https://giphy.com/embed/3o72FcJmLzIdYJdmDe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/americasgottalent-thumbs-up-agt-simon-cowell-3o72FcJmLzIdYJdmDe">via GIPHY</a></p>
+<iframe src="https://giphy.com/gifs/target-bullseye-targetstyle-l3q2umc327t2nzSOQ" width="480" height="270" frameBorder="0" class="giphy-embed">
