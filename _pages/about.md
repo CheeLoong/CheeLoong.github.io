@@ -5,35 +5,23 @@ author_profile: true
 header:
 ---
 
-Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/170619.pdf).
+Before we go into my dramatic life story, if you are a recruiter for a Data Scientist position, here's my [resume]({{ site.url }}{{ site.baseurl }}/assets/cv/latest-cv.pdf).
 
-Alright, let us proceed!
+I know "About Me" is usually short and sweet, but in order to minimize the possibility of negative first impressions, I have to explain a little bit more about myself. Let's jump into it!
 
-I am a **Finance & Econometrics** graduate of **Monash University Clayton University**, also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019. As tough as it sounds, it's really not that bad (you gotta look at the bright side of everything right?)
+My name is Chee Loong, am a **Finance & Econometrics** graduate of **Monash University Clayton University**, also a self-proclaimed driven, passionate data scientist, 26 years of age, going through quarter-life crisis, falls under the 3.3% of unemployed Malaysian in 2019.
 
-Anyway, I worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst**, my main responsibilities were media budget optimization for social media adverts, identifying success metrics & tracking metrics for the digital campaign, and also writing post digital campaign reports. Then, I was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really I worked as a **Data Consultant** for 3 months.
+Anyway, I worked in a digital marketing firm known as **Crave Asia Sdn. Bhd**. for 15 months as a **digital analyst** in the year 2016 - 2017. Then, upon realizing where my passion lies, I left and self-taught DS skills. Luckily for me, in 2018, I was hired by **Ernst & Young Services Sdn. Bhd.** as a **Data Scientist Associate**, but really I worked as a **Data Consultant** for 3 months and received a full-time job offer letter towards end of my probation period, I turned it down and handed in a resignation letter instead.
 
-***I am glad you asked what does a data consultant do!***
+***So why did you quit after 3 months?***
 
-The less cool description is that there was a lot of meet ups with the key executives, a lot of Microsoft Powerpoint Presentation & Excel.
+If I had a time machine, I don't think I would ever quit my previous job (Because who would've guessed I would be unemployed for that long), but here's my thought process at that time. I pretty much got what everyone wanted from a job except that I didn't get the only thing that I cared about, which is the exposure in the technical field of data analytics, nothing satisfies me more than being able to transform data into actionable insights that can drive decisions that are valuable to the company, I want to be the guy who gets his hands dirty doing all that.
 
-The slightly cooler version was that I was responsible for identifying the key performance indicators for BI, help compile the data warehouse architecture for data migration purpose, co-write analytics proposal and come up with use-cases.
+I don't hate being a data consultant, I just love it less than the other job, it was quite challenging for me to balance between my full time job and self-learning what I wanted to do, I work extra hours at my job even when it's not exactly my dream job. The reason is simple, if I finish my work early, I will be assigned more work, and that would help me learn more and progress faster.  
 
-***So why did you quit after 3 months? (Assuming you were a loyal employee)***
+But at the end of the day, I sat down and had 2 reasonable considerations at that time, either I continue to work as a data consultant and wait for potential job opportunities to work as a data scientist, or leave my current job without any job opportunities in hand, which also make my resume profile look really bad.
 
-How can I begin to explain this without sounding like I am just a guy who is pushing responsibilities or giving excuses? To be honest, I can't, but I will try.
-
-Looking back, I would admit that it was impulsive of me to quit the job after a period of 3 months (despite getting top performance reviews & job offer), everyone told me not to, I pretty much got what everyone wanted from a job except that I didn't get the only thing that I cared about, which is to the exposure in the technical field of data analytics.
-
-The thing is I don't hate my job, I actually adore it, it's just that I love it less than the other job, and I sat down and thought about which to focus on, I work extra time as a **data consultant** using my personal time, because I was striving to be a better **data consultant**, but the same question kept popping in my head, is that truly what I want to do?
-
-Then I saw this..
-
-<img src="https://digitaladdictsblog.com/wp-content/uploads/2018/10/steve-jobs-quotes-2.jpg" width="800">
-
-Okay, so there were 2 reasonable considerations at that time, either I continue to work as a **data consultant** and wait for potential job opportunities to work as a **data scientist**, or leave my current job without any job opportunities in hand, which also make my resume profile look really bad.
-
-I opted for the second option, the reason is simple, I do not have a technical background, and so it would be hard to get a technical job without having technical background, or technical working experience, rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to create my own opportunities through sheer force of will and effort by self-learning the technical aspect of data analytics, and consequently, leaving my full time job.  
+I opted for the second option, since I do not have strong technical background or working experience, it would be hard to get a "technical" job in the field, so rather than waiting for a very slim possibility of gaining technical working experience with my current job, I opted to create my own opportunities through sheer force of will and effort by self-learning the technical aspect of data analytics, and consequently, leaving my full time job.
 
 It is a path that sounded logical to me, probably not to everyone else, I did not really question the probability of me landing on a technical job when I hand in the resignation letter, all I was thinking is that, to me that was the right thing to do, and even if odds were not in my favour, it's important enough.
 
@@ -44,6 +32,8 @@ It is a path that sounded logical to me, probably not to everyone else, I did no
 
 A lot of MOOCs, I learned a lot of traditional algorithm and methodologies, I went to a lot of DS interviews which I wasn't shortlisted (I guess traditional algorithm isn't good enough), but it did opened my eyes on the standard and qualities that the top companies are looking for from their candidates. I don't like to swim in the pool of self-pity for long, so I picked myself up and continue this journey, I received some advices from some DS on Linkedin, I watched a lot of 'how to get a job as DS' on Youtube, I read on various forums on the subject, piecing up the advices from all sources, decided to start deep learning, decided to start a blog and put learnings and my personal work on my blog, it's probably the biggest reason why I could turn all the adversities into fuel that keeps me going.
 
-***Final Thoughts?***
+***Why should companies consider/hire you?***
 
-Well, I just hope my time will come soon, the time when companies would appreciate my persona and skills, and offer me an actual DS job. Oh boy, you'd be suprised how much value I can bring to the company, but more importantly, so that my family and friends could stop worrying about my mental state, but seriously I don't know what they are worrying about, it's just a winning mentality. :)
+Software 2.0, what I learn, what I like to do, all falls under the umbrella of Software 2.0, and if your companies are looking at the long term, you would be thinking about Software 2.0, and you need to hire people to make that happen, and guess what, I am that guy!  
+
+<iframe src="https://giphy.com/embed/3o72FcJmLzIdYJdmDe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/americasgottalent-thumbs-up-agt-simon-cowell-3o72FcJmLzIdYJdmDe">via GIPHY</a></p>
