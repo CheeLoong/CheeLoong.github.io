@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wired In"
+title                    : "無職転生"
 title_separator          : "-"
 name                     : "Chee Loong Lian"
-description              : "Data Science Portfolio."
+description              : "Data Portfolio."
 url                      : "https://cheeloong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cheeloong/cheeloong.github.io"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Chee Loong"
   avatar           : /assets/images/mypic.png
-  bio              : "data scientist @ AIA Malayisa | former data consultant @ EY Malaysia | former digital analyst @ Crave Asia | B.Com in Econometrics & Finance"
+  bio              : "Coda | ex-Grab | ex-AIA | ex-EY | ex-Crave Asia | B.Com in Econometrics & Finance"
   location         : "Kuala Lumpur, Malaysia"
   email            :
   links:
@@ -123,13 +123,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/guitometrics"
+      # url: "https://www.youtube.com/watch?v=fE9trKOuT3Q"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CheeLoong"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/chee.loong"
+      # url: "https://www.youtube.com/watch?v=fE9trKOuT3Q"
 
 # Site Footer
 footer:

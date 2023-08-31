@@ -5,13 +5,8 @@ author_profile: true
 header:
 ---
 
-Hi stranger, my name is Chee Loong, some people call me Cody, I am a self taught data scientist, data analyst, data ninja, or whatever you want to call it to make me feel better about myself.
+Name's Chee Loong (or Cody) - spent half a decade mastering the art of data manipulation and virtual dashboard architecture, yet my true superpower isn't my technical skills but my magnetic personality that defies standard human metrics. 
 
-I have started my data science journey in 2017 and started working in the analytics field in 2018, I have worked in EY as a data consultant, and am currently in AIA as a data scientist.
+I have previously worked in Crave Asia (Digital), EY (Project Management), AIA (Consumer Marketing), GRAB (Risk), and now Coda (Risk). While many shift roles chasing bigger paychecks, my transitions have been fueled by something less tangible but far more valuable: the pursuit of insurmountable challenges and exponential personal growth (be it domain knowledge, new techstack, soft skill development, or bigger responsibilities) - just to be clear I still have to pay water bills, so please do not underpay me, hit me up if you've got a job opportunity! 
 
-Oh you are interested about what I have learned about deep learning? click [here](https://cheeloong.github.io/year-archive/) to read my blogpost.
-
-Oh wait you don't actually care about my blogpost, but you want to connect me to your client? click [here]({{ site.url }}{{ site.baseurl }}/assets/cv/latest-cv.pdf) for my latest cv.
-
-
-What? You don't care about my blogpost, and you are not here to connect me to your client? click [here](https://www.youtube.com/watch?v=fWNaR-rxAic).
+What? You don't care about my blogpost, and you are not here to talk to me about potential job opportunities? click [here](https://www.youtube.com/watch?v=fWNaR-rxAic).
