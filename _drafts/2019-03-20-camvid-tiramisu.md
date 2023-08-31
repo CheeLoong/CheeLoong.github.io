@@ -5,6 +5,7 @@ permalink: /camvid-tiramisu/
 tags: [fastai, deep learning, cnn, u-net, camvid-tiramisu, semantic segmentation]
 excerpt: "Semantic Segmentation with U-Net Convolutional Neural Network"
 mathjax: "true"
+published: false
 ---
 
 # Image segmentation with CamVid

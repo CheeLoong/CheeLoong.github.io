@@ -5,6 +5,7 @@ permalink: /mnist-resnet/
 tags: [fastai, pytorch, cnn, resnet, mnist]
 excerpt: "Building resnet architecture on top of CNN"
 mathjax: "true"
+published: false
 ---
 
 ## MNIST CNN

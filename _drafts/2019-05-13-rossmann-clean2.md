@@ -5,6 +5,7 @@ permalink: /rossmann-clean2/
 tags: [fastai, feature engineering, data cleaning, rossmann, kaggle]
 excerpt: "Preparing the dataset before we build neural net on Rossmann"
 mathjax: "true"
+published: false
 ---
 
 In this blogpost, we will be using [Rossmann dataset](https://www.kaggle.com/c/rossmann-store-sales/data) which was featured on Kaggle 3 years ago.

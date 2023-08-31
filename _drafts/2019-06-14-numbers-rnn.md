@@ -5,6 +5,7 @@ permalink: /numbers-rnn/
 tags: [fastai, pytorch, rnn, human numbers, deep learning]
 excerpt: "Exploring RNN on a toy example with fastai library "
 mathjax: "true"
+published: false
 ---
 
 In this blogpost, let's learn what a Recurrent Neural Network (RNN) actually is, we will be using a toy example from fast.ai library to demonstrate this deep learning model.

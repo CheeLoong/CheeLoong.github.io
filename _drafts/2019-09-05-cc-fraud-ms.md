@@ -5,6 +5,7 @@ permalink: /ccfraud-ms
 tags: [model selection, feature selection, parameter tuning, credit card fraud]
 excerpt: "Choosing the best models out of logreg, randforest, and svc"
 mathjax: "true"
+published: false
 ---
 
 

@@ -5,6 +5,7 @@ permalink: /ccfraud-ptfs
 tags: [parameter tuning, feature selection, logistic regression, credit card fraud]
 excerpt: "Exploring techniques to deal with imbalanced dataset and doing feature selection"
 mathjax: "true"
+published: false
 ---
 
 Hello world, in this blogpost we will exploring the same old credit card dataset that I have previously built a neural network around.

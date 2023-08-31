@@ -5,6 +5,7 @@ permalink: /pets-superres/
 tags: [fastai, pytorch, super-resolution, perceptual losses, pets, deep learning]
 excerpt: "Using Perceptual Losses as the loss function for super-resolution task with fastai library"
 mathjax: "true"
+published: false
 ---
 
 In this blogpost, we will revisit the oxford pets dataset just like in the previous blogpost, but with a little tweak, when we try to crappify our images, we are not going to write a random number on the image, we are just simply going to make the resolution worse since we have learnt how to remove a number on an image from the previous blogpost.
