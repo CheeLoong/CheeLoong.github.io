@@ -288,10 +288,21 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
+  # _posts (English posts)
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  # cn_posts (Chinese posts)
+  - scope:
+      path: ""
+      type: cn_posts
     values:
       layout: single
       author_profile: true
