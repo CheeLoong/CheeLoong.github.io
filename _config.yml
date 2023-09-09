@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Chee Loong"
-  avatar           : /assets/images/mypic.png
+  avatar           : /assets/images/index_wallpaper/mypic.png
   bio              : "Risk Analyst @ Coda | ex-Grab | ex-AIA | ex-EY | ex-Crave Asia | B.Com in Econometrics & Finance"
   location         : "Kuala Lumpur, Malaysia"
   email            :
@@ -278,6 +278,12 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# New collection for Chinese posts
+collections:
+  cn_posts:
+    output: true
+    permalink: "/cn/:title/"
 
 
 # Defaults
