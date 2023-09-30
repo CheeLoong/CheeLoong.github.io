@@ -280,10 +280,10 @@ compress_html:
     envs: development
 
 # New collection for Chinese posts
-collections:
-  cn_posts:
-    output: true
-    permalink: "/cn/:title/"
+# collections:
+#   cn_posts:
+#     output: true
+#     permalink: "/cn/:title/"
 
 
 # Defaults
