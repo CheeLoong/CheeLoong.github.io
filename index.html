@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Code Collapser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .method-container, .constant-container {
+            margin: 5px 0;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .async-method {
+            border-left: 4px solid #4CAF50;
+        }
+        .constant-container {
+            border-left: 4px solid #9c27b0;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin: 10px 0;
+            font-family: monospace;
+            padding: 10px;
+        }
+        .output-code {
+            white-space: pre;
+            font-family: monospace;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .method-name, .constant-name {
+            font-family: monospace;
+            margin-left: 8px;
+        }
+        .async-badge, .constant-badge {
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 8px;
+        }
+        .async-badge {
+            background-color: #4CAF50;
+        }
+        .constant-badge {
+            background-color: #9c27b0;
+        }
+        .control-panel {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .class-section, .constant-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .class-name, .section-header {
+            margin: 0 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        .error {
+            color: #dc3545;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dc3545;
+            border-radius: 4px;
+            background-color: #f8d7da;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/python-ast/0.0.30/ast.min.js"></script>
+</head>
+<body>
+    <h1>Python Code Collapser</h1>
+    
+    <div>
+        <h3>Input Python Code:</h3>
+        <textarea id="codeInput" placeholder="Paste your Python code here..."></textarea>
+    </div>
+
+    <div class="control-panel">
+        <button onclick="analyzeCode()">Analyze Code</button>
+        <button onclick="generateCollapsedCode()">Generate Modified Code</button>
+        <button onclick="selectAll()">Select All</button>
+        <button onclick="deselectAll()">Deselect All</button>
+    </div>
+
+    <div id="error" style="display: none;" class="error"></div>
+    <div id="constantsList"></div>
+    <div id="methodsList"></div>
+    <h3>Output Code:</h3>
+    <div id="output" class="output-code"></div>
+
+    <script>
+        class CodeAnalyzer {
+            constructor(code) {
+                this.code = code;
+                this.ast = null;
+            }
+
+            analyze() {
+                try {
+                    this.ast = Python.parse(this.code);
+                    const classes = [];
+                    const constants = [];
+
+                    // Analyze the AST
+                    this.ast.body.forEach(node => {
+                        if (node.type === 'ClassDef') {
+                            const methods = [];
+                            node.body.forEach(item => {
+                                if (item.type === 'FunctionDef' || item.type === 'AsyncFunctionDef') {
+                                    methods.push({
+                                        name: item.name,
+                                        signature: this._getMethodSignature(item),
+                                        is_async: item.type === 'AsyncFunctionDef'
+                                    });
+                                }
+                            });
+                            classes.push({
+                                name: node.name,
+                                methods: methods
+                            });
+                        } else if (node.type === 'Assign') {
+                            node.targets.forEach(target => {
+                                if (target.type === 'Name' && target.id.toUpperCase() === target.id) {
+                                    constants.push({
+                                        name: target.id,
+                                        value: this._getConstantValue(node.value)
+                                    });
+                                }
+                            });
+                        }
+                    });
+
+                    return { classes, constants };
+                } catch (error) {
+                    throw new Error('Failed to parse Python code: ' + error.message);
+                }
+            }
+
+            _getMethodSignature(node) {
+                const args = node.args.args.map(arg => arg.arg).join(', ');
+                const asyncPrefix = node.type === 'AsyncFunctionDef' ? 'async ' : '';
+                return `${asyncPrefix}def ${node.name}(${args})`;
+            }
+
+            _getConstantValue(node) {
+                if (node.type === 'Str') return node.s;
+                if (node.type === 'Constant') return String(node.value);
+                return '<complex value>';
+            }
+
+            collapseCode(methodsToCollapse, constantsToCollapse) {
+                const collapsedCode = this.code.split('\n').map(line => {
+                    // Simple implementation - replace method bodies and constant values
+                    let modifiedLine = line;
+                    
+                    // Check for methods to collapse
+                    methodsToCollapse.forEach(method => {
+                        if (line.includes(`def ${method.method_name}`) || 
+                            line.includes(`async def ${method.method_name}`)) {
+                            modifiedLine = modifiedLine.replace(/:.+$/, ': # code collapsed');
+                        }
+                    });
+
+                    // Check for constants to collapse
+                    constantsToCollapse.forEach(constant => {
+                        if (line.includes(constant)) {
+                            modifiedLine = modifiedLine.replace(/=.+$/, '= " code collapsed "');
+                        }
+                    });
+
+                    return modifiedLine;
+                }).join('\n');
+
+                return collapsedCode;
+            }
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+
+        function hideError() {
+            document.getElementById('error').style.display = 'none';
+        }
+
+        function analyzeCode() {
+            hideError();
+            const code = document.getElementById('codeInput').value;
+            try {
+                const analyzer = new CodeAnalyzer(code);
+                const result = analyzer.analyze();
+                displayConstants(result.constants);
+                displayMethods(result.classes);
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function displayConstants(constants) {
+            const constantsList = document.getElementById('constantsList');
+            if (constants && constants.length > 0) {
+                constantsList.innerHTML = '<div class="constant-section"><h4 class="section-header">Constants:</h4>';
+                constants.forEach(constant => {
+                    const constantDiv = document.createElement('div');
+                    constantDiv.className = 'constant-container';
+                    constantDiv.innerHTML = `
+                        <input type="checkbox" id="constant_${constant.name}" 
+                               data-type="constant"
+                               data-name="${constant.name}">
+                        <span class="constant-name">${constant.name}</span>
+                        <span class="constant-badge">CONSTANT</span>
+                    `;
+                    constantsList.appendChild(constantDiv);
+                });
+                constantsList.innerHTML += '</div>';
+            } else {
+                constantsList.innerHTML = '';
+            }
+        }
+
+        function displayMethods(classes) {
+            const methodsList = document.getElementById('methodsList');
+            methodsList.innerHTML = '<h3>Select methods to collapse:</h3>';
+            
+            classes.forEach(cls => {
+                const classDiv = document.createElement('div');
+                classDiv.className = 'class-section';
+                classDiv.innerHTML = `<h4 class="class-name">Class: ${cls.name}</h4>`;
+                
+                cls.methods.forEach(method => {
+                    const methodDiv = document.createElement('div');
+                    methodDiv.className = `method-container ${method.is_async ? 'async-method' : ''}`;
+                    methodDiv.innerHTML = `
+                        <input type="checkbox" id="${cls.name}_${method.name}" 
+                               data-type="method"
+                               data-class="${cls.name}" 
+                               data-method="${method.name}">
+                        <span class="method-name">${method.signature}</span>
+                        ${method.is_async ? '<span class="async-badge">async</span>' : ''}
+                    `;
+                    classDiv.appendChild(methodDiv);
+                });
+                
+                methodsList.appendChild(classDiv);
+            });
+        }
+
+        function generateCollapsedCode() {
+            hideError();
+            const code = document.getElementById('codeInput').value;
+            const selectedItems = {
+                methods: [],
+                constants: []
+            };
+            
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
+                if (checkbox.dataset.type === 'method') {
+                    selectedItems.methods.push({
+                        class_name: checkbox.dataset.class,
+                        method_name: checkbox.dataset.method
+                    });
+                } else if (checkbox.dataset.type === 'constant') {
+                    selectedItems.constants.push(checkbox.dataset.name);
+                }
+            });
+            
+            try {
+                const analyzer = new CodeAnalyzer(code);
+                const modifiedCode = analyzer.collapseCode(selectedItems.methods, selectedItems.constants);
+                document.getElementById('output').textContent = modifiedCode;
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function selectAll() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = true;
+            });
+        }
+
+        function deselectAll() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        }
+    </script>
+</body>
+</html>
