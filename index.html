@@ -94,6 +94,9 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/python-ast/0.0.30/ast.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.23.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.23.0/mode-python.js"></script>
 </head>
 <body>
     <h1>Python Code Collapser</h1>
@@ -117,91 +120,106 @@
     <div id="output" class="output-code"></div>
 
     <script>
-        class CodeAnalyzer {
-            constructor(code) {
-                this.code = code;
-                this.ast = null;
-            }
+class CodeAnalyzer {
+    constructor(code) {
+        this.code = code;
+    }
 
-            analyze() {
-                try {
-                    this.ast = Python.parse(this.code);
-                    const classes = [];
-                    const constants = [];
-
-                    // Analyze the AST
-                    this.ast.body.forEach(node => {
-                        if (node.type === 'ClassDef') {
-                            const methods = [];
-                            node.body.forEach(item => {
-                                if (item.type === 'FunctionDef' || item.type === 'AsyncFunctionDef') {
-                                    methods.push({
-                                        name: item.name,
-                                        signature: this._getMethodSignature(item),
-                                        is_async: item.type === 'AsyncFunctionDef'
-                                    });
-                                }
-                            });
-                            classes.push({
-                                name: node.name,
-                                methods: methods
-                            });
-                        } else if (node.type === 'Assign') {
-                            node.targets.forEach(target => {
-                                if (target.type === 'Name' && target.id.toUpperCase() === target.id) {
-                                    constants.push({
-                                        name: target.id,
-                                        value: this._getConstantValue(node.value)
-                                    });
-                                }
-                            });
-                        }
+    analyze() {
+        const classes = [];
+        const constants = [];
+        
+        // Split code into lines
+        const lines = this.code.split('\n');
+        
+        let currentClass = null;
+        let currentMethods = [];
+        
+        // Process each line
+        lines.forEach((line, index) => {
+            // Check for class definitions
+            const classMatch = line.match(/class\s+(\w+)/);
+            if (classMatch) {
+                if (currentClass) {
+                    classes.push({
+                        name: currentClass,
+                        methods: currentMethods
                     });
+                }
+                currentClass = classMatch[1];
+                currentMethods = [];
+            }
+            
+            // Check for method definitions
+            const methodMatch = line.match(/(async\s+)?def\s+(\w+)\s*\((.*?)\)/);
+            if (methodMatch && currentClass) {
+                currentMethods.push({
+                    name: methodMatch[2],
+                    signature: `${methodMatch[1] || ''}def ${methodMatch[2]}(${methodMatch[3]})`,
+                    is_async: !!methodMatch[1]
+                });
+            }
+            
+            // Check for constants
+            const constantMatch = line.match(/^([A-Z_][A-Z0-9_]*)\s*=/);
+            if (constantMatch && !currentClass) {
+                constants.push({
+                    name: constantMatch[1],
+                    value: line.split('=')[1].trim()
+                });
+            }
+        });
+        
+        // Add the last class if exists
+        if (currentClass) {
+            classes.push({
+                name: currentClass,
+                methods: currentMethods
+            });
+        }
+        
+        return { classes, constants };
+    }
 
-                    return { classes, constants };
-                } catch (error) {
-                    throw new Error('Failed to parse Python code: ' + error.message);
+    collapseCode(methodsToCollapse, constantsToCollapse) {
+        const lines = this.code.split('\n');
+        let inMethodToCollapse = false;
+        let indentationLevel = 0;
+        
+        return lines.map((line, index) => {
+            // Check if this line starts a method to collapse
+            const methodMatch = line.match(/(async\s+)?def\s+(\w+)/);
+            if (methodMatch) {
+                const methodName = methodMatch[2];
+                if (methodsToCollapse.some(m => m.method_name === methodName)) {
+                    inMethodToCollapse = true;
+                    indentationLevel = (line.match(/^\s*/) || [''])[0].length;
+                    return line + '\n' + ' '.repeat(indentationLevel + 4) + '# code collapsed';
+                }
+                inMethodToCollapse = false;
+            }
+            
+            // Skip method body if we're in a method to collapse
+            if (inMethodToCollapse) {
+                const currentIndent = (line.match(/^\s*/) || [''])[0].length;
+                if (currentIndent > indentationLevel) {
+                    return null; // Skip this line
+                }
+                inMethodToCollapse = false;
+            }
+            
+            // Check for constants to collapse
+            for (const constant of constantsToCollapse) {
+                const constRegex = new RegExp(`^(\\s*${constant}\\s*=\\s*).*`);
+                if (constRegex.test(line)) {
+                    return line.replace(/=.+$/, '= " code collapsed "');
                 }
             }
-
-            _getMethodSignature(node) {
-                const args = node.args.args.map(arg => arg.arg).join(', ');
-                const asyncPrefix = node.type === 'AsyncFunctionDef' ? 'async ' : '';
-                return `${asyncPrefix}def ${node.name}(${args})`;
-            }
-
-            _getConstantValue(node) {
-                if (node.type === 'Str') return node.s;
-                if (node.type === 'Constant') return String(node.value);
-                return '<complex value>';
-            }
-
-            collapseCode(methodsToCollapse, constantsToCollapse) {
-                const collapsedCode = this.code.split('\n').map(line => {
-                    // Simple implementation - replace method bodies and constant values
-                    let modifiedLine = line;
-                    
-                    // Check for methods to collapse
-                    methodsToCollapse.forEach(method => {
-                        if (line.includes(`def ${method.method_name}`) || 
-                            line.includes(`async def ${method.method_name}`)) {
-                            modifiedLine = modifiedLine.replace(/:.+$/, ': # code collapsed');
-                        }
-                    });
-
-                    // Check for constants to collapse
-                    constantsToCollapse.forEach(constant => {
-                        if (line.includes(constant)) {
-                            modifiedLine = modifiedLine.replace(/=.+$/, '= " code collapsed "');
-                        }
-                    });
-
-                    return modifiedLine;
-                }).join('\n');
-
-                return collapsedCode;
-            }
-        }
+            
+            return line;
+        }).filter(line => line !== null).join('\n');
+    }
+}
 
         function showError(message) {
             const errorDiv = document.getElementById('error');
